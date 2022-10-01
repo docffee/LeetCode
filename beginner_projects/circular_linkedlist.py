@@ -1,5 +1,3 @@
-# https://www.youtube.com/watch?v=5WoNhm7sOnA
-
 class Node:
     def __init__(self, data):
         self.data = data
