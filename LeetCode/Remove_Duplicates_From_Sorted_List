@@ -17,7 +17,7 @@ class Solution(object):
     cur = head
 
     while cur:
-            while cur.next and cur.next.val == cur.val:         # loop if next exists and current is equal to next val
+            while cur.next and cur.next.val == cur.val:    # loop if next exists and cur val equals next val
                 cur.next = cur.next.next
         cur = cur.next
     return head
