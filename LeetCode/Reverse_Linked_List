@@ -1,9 +1,10 @@
+# LeetCode 206 Reverse Linked List
 # Definition for singly-linked list.
 # class ListNode(object):
 #     def __init__(self, val=0, next=None):
 #         self.val = val
 #         self.next = next
-# Output to array then create linked list
+# Reverse list iteratively by changing direction of pointers
 
 class Solution(object):
     def reverseList(self, head):
@@ -20,6 +21,7 @@ class Solution(object):
             cur = tmp
         return prev
 
+#Reverse list recursively
     def reverseListRecursive(self, head):
         def rec(prev, cur):
             if not cur:
