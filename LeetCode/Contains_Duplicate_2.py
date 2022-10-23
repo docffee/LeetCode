@@ -1,14 +1,13 @@
 class Solution:
     def containsNearbyDuplicate(self, nums: List[int], k: int) -> bool:
-        # Runtime: 1150 ms 59.96% Memory Usage: 28.3 MB 14.07% 
+        # Runtime: 769 ms 80.70% Memory Usage: 28.3 MB 14.07% 
         dict = {}
         j = {}
         for i in range(len(nums)):
             if nums[i] in dict:
                 dict[nums[i]] +=1
-                if abs(j[nums[i]]-i)<= k: #if match number subtract last number index
+                if i-j[nums[i]]<= k: #if match number subtract last number index
                     return True
-                j[nums[i]] = i
             dict[nums[i]] = 1
             j[nums[i]] = i  #remember most recent instance number and index of number
         return False
