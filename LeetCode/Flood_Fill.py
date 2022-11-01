@@ -6,7 +6,6 @@ class Solution:
         """
         if image[sr][sc] == color:
             return image
-        i, j = sr, sc
         curColor = image[sr][sc]
         def dfs(row,col):
             if image[row][col] == curColor:
