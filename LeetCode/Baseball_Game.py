@@ -2,7 +2,6 @@ class Solution:
     def calPoints(self, operations: List[str]) -> int:
         """Runtime: 44 ms, faster than 92.05% of Python3 online submissions for Baseball Game.
         Memory Usage: 14.2 MB, less than 32.76% of Python3 online submissions for Baseball Game."""
-        num = ["1","2","3","4","5","6","7","8","9","0"]
         arr = []
         for i in operations:
             if i.lstrip('-').isdigit():
