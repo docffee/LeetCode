@@ -7,5 +7,5 @@ class Solution:
         for i in range(n):
             nums1[i + m] = nums2[i]
         
-        # Sort nums1 list in-place.
+        # Sort nums1 list in-place.s
         nums1.sort()
